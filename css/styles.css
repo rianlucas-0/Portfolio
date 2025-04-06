@@ -1,22 +1,108 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
 }
 
-body{
+body {
     background-color: #0b0a10;
 }
-div{
-    width: 100vw;
-    height: 100vh;
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
 }
 
-.particles-js-canvas-el {
+header {
+    padding: 40px 0;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tag h1 a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: none;
+}
+
+.tag h1 a span {
+    color: #00BFFF;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+header nav ul li a {
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-contato a button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #00BFFF;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn-contato a button:hover {
+    box-shadow: 0 0 8px #00BFFF;
+}
+
+.site-top {
+    padding: 60px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.site-top h1 {
+    color: white;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.site-top h1 strong {
+    font-weight: 700;
+}
+
+.site-top-img img {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left:0;
+    z-index: -1; /* fica atrás de tudo */
 }
